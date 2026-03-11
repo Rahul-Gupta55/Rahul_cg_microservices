@@ -1,5 +1,5 @@
 server:
-  port: 7077
+  port: 7708
 
 spring:
   datasource:
@@ -12,3 +12,9 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
